@@ -5,21 +5,21 @@ const newQuote = document.querySelector(".quote_btn");
 const tweet_btn = document.querySelector(".tweet_btn");
 
 const apiLink = "https://quotes-api-self.vercel.app/quote";
+let temp;
 //api call =async,await
 const getData = async () => {
   const response = await fetch(apiLink);
   const data = await response.json();
-  // console.log(data);
-  // console.log(data.author);
-  // console.log(data.quote);
+
   quote.innerText = data.quote;
   author.innerText = data.author;
+  temp = data.quote;
 };
 getData();
 newQuote.addEventListener("click", () => {
   getData();
 });
 tweet_btn.addEventListener("click", () => {
-  window.open("https://twitter.com/intent/tweet?text=Hello%20world");
+  window.open("https://twitter.com/intent/tweet?text=" + temp);
 });
 console.log(object);
