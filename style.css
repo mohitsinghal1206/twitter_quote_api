@@ -122,6 +122,16 @@ blockquote {
   justify-content: center;
 }
 
+.buttons button.tweet_btn {
+  background-color: black; /* Change background color to black */
+  color: #fff; /* Keep text color white */
+  border: none; /* Remove border */
+}
+
+.buttons button.tweet_btn:hover {
+  background-color: #333; /* Slightly lighter black on hover */
+}
+
 .buttons button i {
   margin-right: 5px; /* Space between icon and text */
 }
@@ -221,4 +231,28 @@ blockquote,
 /* Create a hidden class for fade-out effect */
 .hidden {
   opacity: 0;
+}
+.buttons button.tweet_btn {
+  background-color: black; /* Change background color to black */
+  color: #fff; /* Keep text color white */
+  border: none; /* Remove border */
+}
+
+.buttons button.tweet_btn:hover {
+  background-color: #333; /* Slightly lighter black on hover */
+}
+.quote-fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.quote-fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Ensure the quote starts with fade-in effect initially */
+blockquote {
+  opacity: 1; /* Ensure the initial opacity is set for fade-in */
+  transition: opacity 0.5s ease-in-out;
 }
