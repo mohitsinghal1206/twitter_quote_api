@@ -11,7 +11,7 @@ let temp;
 const video = document.getElementById("backgroundVideo");
 
 // Set the playback speed (e.g., 0.5 for half speed, 1.0 for normal speed)
-video.playbackRate = 0.6;  // Adjust this value for the desired speed
+video.playbackRate = 0.5;  // Adjust this value for the desired speed
 
 // Function to handle the fade-out effect
 const fadeOut = (element) => {
